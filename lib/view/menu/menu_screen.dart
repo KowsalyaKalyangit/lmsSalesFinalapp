@@ -89,7 +89,7 @@ class _MenuScreenState extends State<MenuScreen> {
                     ),
                      InkWell(
                 onTap: () async{
-                     Uri mail = Uri.parse("https://cherritech.us/proelevators/about.php");
+                     Uri mail = Uri.parse("https://professionalelevators.in/about.php");
                       if (await launchUrl(mail)) {
                           //email app opened
                       }else{
@@ -134,7 +134,7 @@ const SizedBox(
                   print('clickkk');
                   
                   
-                   Uri mail = Uri.parse("https://cherritech.us/proelevators/contactus.php");
+                   Uri mail = Uri.parse("https://professionalelevators.in/contactus.php");
                       if (await launchUrl(mail)) {
                           //email app opened
                       }else{
@@ -322,7 +322,7 @@ const SizedBox(
                            }) ;
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: logocolor,
+                            backgroundColor: logocolor,
                             elevation: 0,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5),

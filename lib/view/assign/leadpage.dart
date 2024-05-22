@@ -41,7 +41,7 @@ class _LeadPageState extends State<LeadPage> {
           if(leadsDetailsController.isLeadsDetailsLoad.value){
             return Center(child: CircularProgressIndicator(),);
           }
-          else if(leadsDetailsController.getleadsdetails.isEmpty){
+          else if(leadsDetailsController.getleadsdetails[0].data.isEmpty){
             return Center(child: Text('No Data Found'),);
           }
           else{
@@ -136,7 +136,7 @@ class _LeadPageState extends State<LeadPage> {
                         height: 4.0.hp,
                         width: 25.0.wp,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),color: data.status=='Final Status'?Colors.green[900]:
-                        data.status=='Proposal Submited'?Colors.amber[900]:
+                        data.status=='Proposal Submited'?Colors.amber[900]:data.status=='Customer'?Colors.amber[700]:
                         Colors.red.shade400),
                         child: Center(
                           child: Text(data.status

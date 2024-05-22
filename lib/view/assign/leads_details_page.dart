@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:leadingmanagementsystem/allpackages.dart';
 import 'package:leadingmanagementsystem/utils/colors.dart';
@@ -181,9 +183,12 @@ class _LeadsDetailsPageState extends State<LeadsDetailsPage>
               id: widget.id.toString(),
             ),
             ReminderScreen(id: widget.id.toString()),
-            RecordingScreen(
+           
+           RecorderExample(
               id: widget.id.toString(),
-            ),
+            
+            ) ,
+            
             ActivityScreen(id: widget.id.toString())
           ]),
         )
